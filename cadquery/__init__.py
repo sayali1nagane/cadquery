@@ -15,6 +15,9 @@ Example usage::
         .workplane()
         .hole(5)
     )
+
+Note: This is a personal fork for learning and experimentation.
+Upstream project: https://github.com/CadQuery/cadquery
 """
 
 from .cq import CQ, Workplane
