@@ -18,6 +18,11 @@ Example usage::
 
 Note: This is a personal fork for learning and experimentation.
 Upstream project: https://github.com/CadQuery/cadquery
+
+Personal notes:
+- Tracking upstream v2.4.0
+- Main areas of interest: Assembly constraints, Sketch API
+- TODO: experiment with custom selectors
 """
 
 from .cq import CQ, Workplane
