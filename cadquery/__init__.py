@@ -68,6 +68,11 @@ __license__ = "Apache License 2.0"
 # e.g.: if cq.version_info >= (2, 4, 0): ...
 version_info = tuple(int(x) for x in __version__.split("."))
 
+# Personal shorthand aliases I find myself using frequently in scripts.
+# Makes interactive/notebook sessions a bit less verbose.
+WP = Workplane
+V = Vector
+
 __all__ = [
     # Core classes
     "CQ",
@@ -112,4 +117,7 @@ __all__ = [
     "importers",
     # Extras
     "version_info",
+    # Personal aliases
+    "WP",
+    "V",
 ]
