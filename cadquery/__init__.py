@@ -72,6 +72,8 @@ version_info = tuple(int(x) for x in __version__.split("."))
 # Makes interactive/notebook sessions a bit less verbose.
 WP = Workplane
 V = Vector
+# P = Plane is handy too, especially when setting up assemblies with custom planes
+P = Plane
 
 __all__ = [
     # Core classes
@@ -120,4 +122,5 @@ __all__ = [
     # Personal aliases
     "WP",
     "V",
+    "P",
 ]
