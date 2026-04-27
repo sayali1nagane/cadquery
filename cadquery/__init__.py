@@ -23,6 +23,7 @@ Personal notes:
 - Tracking upstream v2.4.0
 - Main areas of interest: Assembly constraints, Sketch API
 - TODO: experiment with custom selectors
+- TODO: look into DirectionMinMaxSelector for custom gripper fixture workflow
 """
 
 from .cq import CQ, Workplane
@@ -62,6 +63,10 @@ from . import importers
 __version__ = "2.4.0"
 __author__ = "CadQuery Contributors"
 __license__ = "Apache License 2.0"
+
+# Expose version info as a tuple for easier programmatic comparison
+# e.g.: if cq.version_info >= (2, 4, 0): ...
+version_info = tuple(int(x) for x in __version__.split("."))
 
 __all__ = [
     # Core classes
@@ -105,4 +110,6 @@ __all__ = [
     # Modules
     "exporters",
     "importers",
+    # Extras
+    "version_info",
 ]
