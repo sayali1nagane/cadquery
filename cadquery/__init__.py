@@ -74,6 +74,8 @@ WP = Workplane
 V = Vector
 # P = Plane is handy too, especially when setting up assemblies with custom planes
 P = Plane
+# A = Assembly shorthand - useful when building multi-part assemblies in notebooks
+A = Assembly
 
 __all__ = [
     # Core classes
@@ -123,4 +125,5 @@ __all__ = [
     "WP",
     "V",
     "P",
+    "A",
 ]
